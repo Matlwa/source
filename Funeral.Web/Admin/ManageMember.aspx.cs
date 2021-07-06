@@ -257,7 +257,7 @@ namespace Funeral.Web.Admin
         {
             var months = CultureInfo.CurrentCulture.DateTimeFormat.MonthNames;
             int from = DateTime.Now.Month - 1;
-            int to = DateTime.Now.Month + 2;
+            int to = DateTime.Now.Month + 1;
 
             if (DateTime.Now.Day > 7)
             {
@@ -266,7 +266,7 @@ namespace Funeral.Web.Admin
 
 
 
-            for (int i = from; i < DateTime.Now.Month + 2; i++)
+            for (int i = from; i < DateTime.Now.Month + 1; i++)
             {
 
                 if (i <= 12)
@@ -1354,9 +1354,19 @@ namespace Funeral.Web.Admin
                         DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15);
                         model.DebitDate = date;
                     }
+                    else if (ddlDebitDate.SelectedValue == "20")
+                    {
+                        DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 20);
+                        model.DebitDate = date;
+                    }
                     else if (ddlDebitDate.SelectedValue == "25")
                     {
                         DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 25);
+                        model.DebitDate = date;
+                    }
+                    else if (ddlDebitDate.SelectedValue == "28")
+                    {
+                        DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 28);
                         model.DebitDate = date;
                     }
                     else
@@ -1728,7 +1738,7 @@ namespace Funeral.Web.Admin
         private void BindYear()
         {
 
-            for (int i = DateTime.Now.Year - 5; i < DateTime.Now.Year + 5; i++)
+            for (int i = DateTime.Now.Year - 1 ; i < DateTime.Now.Year + 1; i++ )
             {
                 ddlPolicyStartDateYear.Items.Add(i.ToString());
             }

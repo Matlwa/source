@@ -318,7 +318,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                    </div>
                                     </div>
                                     <div id="tab-2" class="tab-pane">
                                         <div class="row">
@@ -399,7 +399,7 @@
                                                     <label>Code</label>
                                                     <asp:TextBox MaxLength="50" runat="server" ID="txtPostCode" name="name" type="text" onkeypress="return isDecimalNumber(event,this);" class="form-control"></asp:TextBox>
                                                     <%--                                       <div class="form-group">
-<%--                                                    <label>Bank Branch</label>--%>
+                                                    <%--  <label>Bank Branch</label>--%>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
@@ -429,7 +429,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-
+                                          
                                                 <div class="form-group">
                                                     <label>Policy Name<em>*</em> </label>
                                                     <asp:DropDownList ID="ddlPolicy" class="form-control" runat="server">
@@ -463,8 +463,7 @@
                                                             </asp:DropDownList>
                                                             <asp:RequiredFieldValidator ValidationGroup="tab3" ControlToValidate="ddlPolicyStartDateYear" Display="None" InitialValue="0" ID="RequiredFieldValidator11" ForeColor="red" runat="server" ErrorMessage="Select Policy Start Year"></asp:RequiredFieldValidator>
                                                         </div>
-
-                                                    </div>
+                                                       </div>
 
                                                     <asp:HiddenField ID="hdnEditStartDate" runat="server" />
                                                 </div>
@@ -568,6 +567,71 @@
                                                     <br />
                                                     <br />
                                                 </div>
+
+                                                <%--<div class="col-lg-6">
+                                                    <asp:CheckBox ID="AdminChck" runat="server" AutoPostBack="true" Text="Admin Fee" />
+                                                    <br />
+                                                          <div class="form-group">
+                                                              <label>Admin Fee Amount  <em>*</em> </label>
+                                                              <asp:DropDownList ID="adminDdl" class="form-control" runat="server">
+                                                           <asp:ListItem Value="0">Select Admin Fee Amount</asp:ListItem>
+                                                           <asp:ListItem Text="1">R1500 (Taxi)</asp:ListItem>
+                                                           <asp:ListItem Text="2">R1100</asp:ListItem>
+                                                           <asp:ListItem Text="3">R700</asp:ListItem>
+                                                           <asp:ListItem Text="4">R350(Referral)</asp:ListItem>
+                                                           <asp:ListItem Text="5">Waived</asp:ListItem>
+                                                       </asp:DropDownList>
+                                                               </div>
+
+                                                    <div class="form-group">
+                                             <label>Admin Fee Reference No. <em>*</em> </label>
+                                             <asp:TextBox MaxLength="100" runat="server" ID="adminRef" name="name" type="text" class="form-control"></asp:TextBox>
+                                             <asp:RequiredFieldValidator Display="Dynamic" ValidationGroup="debitOrder" ControlToValidate="adminRef" ID="RequiredFieldValidator10" ForeColor="red" runat="server" ErrorMessage="Please Enter Admin Fee Reference Number"></asp:RequiredFieldValidator>
+                                              </div>
+                                                    </div>
+
+                                                 <div class="col-md-6">
+                                             <label>Insurance House</label>
+                                             <asp:DropDownList ID="ddlInsurance" class="form-control" runat="server">
+                                                 <asp:ListItem Value="0">Select Insurance House</asp:ListItem>
+                                                 <asp:ListItem Text="1">Santam</asp:ListItem>
+                                                 <asp:ListItem Text="2">MiWay</asp:ListItem>
+                                                 <asp:ListItem Text="3">Axure</asp:ListItem>
+                                             </asp:DropDownList>
+
+                                                     <div class="form-group">
+                        <label>Insurance Premium<em>*</em> </label>
+                        <asp:TextBox MaxLength="30" runat="server" ID="InsPremium" name="name" type="text" class="form-control"></asp:TextBox>
+                    </div>
+                
+                    <div class="form-group">
+                        <label>Insurance Policy No. <em>*</em> </label>
+                        <asp:TextBox MaxLength="100" runat="server" ID="InsPolicyNo" name="name" type="text" class="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic" ValidationGroup="debitOrder" ControlToValidate="InsPolicyNo" ID="RequiredFieldValidator12" ForeColor="red" runat="server" ErrorMessage="Please Enter Insurance Policy Number"></asp:RequiredFieldValidator>
+                         </div>
+                  </div>
+                                                <div class="col-lg-6">
+                                                 <asp:CheckBox ID="AssistChck" runat="server" AutoPostBack="true" Text="Motion Assist" />
+                                                    <br />
+                                                <div class="form-group">
+                                                    <asp:TextBox MaxLength="30" runat="server" ID="TextBox1" name="name" type="text" class="form-control" Enabled="False" Visible="False"></asp:TextBox>
+                                                    <label>Debit Date <em>*</em> </label>
+                                                    <asp:DropDownList ID="DropDownList1" class="form-control" runat="server">
+                                                        <asp:ListItem Value="0">Select Debit Date</asp:ListItem>
+                                                        <asp:ListItem Value="1">1st</asp:ListItem>
+                                                        <asp:ListItem Value="15">15th</asp:ListItem>
+                                                        <asp:ListItem Value="25">25th</asp:ListItem>
+                                                    </asp:DropDownList>
+                                                     </div>
+                                                <div class="form-group">
+                                                    <asp:TextBox MaxLength="10" CssClass="form-control" Enabled="false" runat="server" ID="TextBox2" name="name" type="text" class="form-control" Visible="False"></asp:TextBox>
+                                                 </div>
+                                              
+                                            </div>
+
+                       
+                                                         </div>--%>
+                                            
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
@@ -581,8 +645,9 @@
                                                         <%--<asp:HyperLink runat="server" ToolTip='Edit' ID="hrLink" NavigateUrl='<%# "~/Admin/ManageMember.aspx?Id="+MemberId.ToString()+"&PkInoteIDList="+Eval("pkiNoteID")%>'><i class="fa fa-edit"></i></asp:HyperLink>--%>
                                                         <asp:Button runat="server" ID="Button2" CssClass="btn btn-sm btn-primary pull-right m-t-n-xs" Text="Next" OnClick="btnTab4_Click" />
                                                     </div>
+                                                    </div>
+                                                
                                                 </div>
-                                            </div>
                                             <div class="col-lg-12">
                                                 <div class="table-responsive">
                                                     <asp:GridView ID="gvProduct" runat="server" Width="100%" CssClass="table table-striped table-bordered table-hover"
@@ -667,7 +732,9 @@
                                                         <asp:ListItem Value="0">Select</asp:ListItem>
                                                         <asp:ListItem Value="1">1st</asp:ListItem>
                                                         <asp:ListItem Value="15">15th</asp:ListItem>
+                                                        <asp:ListItem Value="20">20th</asp:ListItem>
                                                         <asp:ListItem Value="25">25th</asp:ListItem>
+                                                        <asp:ListItem Value="28">28th</asp:ListItem>
                                                     </asp:DropDownList>
                                                      <asp:RequiredFieldValidator Display="None" InitialValue="0" ValidationGroup="tab4" ControlToValidate="ddlDebitDate" ID="RequiredFieldValidator9" ForeColor="red" runat="server" ErrorMessage="Please select Debit Date"></asp:RequiredFieldValidator>
                                                     <%--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>--%>
@@ -714,7 +781,7 @@
                                                                         <Columns>
                                                                             <asp:TemplateField HeaderText="Make">
                                                                                 <ItemTemplate>
-                                                                                    <%#Eval("VehicleMake") %>&nbsp<%#Eval("VehicleModel") %>
+                                                                                    <%#Eval("VehicleMake") %>   <%--&nbsp<%#Eval("VehicleModel") %>--%>
                                                                                 </ItemTemplate>
                                                                             </asp:TemplateField>
                                                                             <asp:BoundField DataField="VehicleModel" HeaderText="Model" ItemStyle-CssClass="visible-lg" HeaderStyle-CssClass="visible-lg" />
@@ -1070,7 +1137,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
 
 

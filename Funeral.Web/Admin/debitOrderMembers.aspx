@@ -123,6 +123,7 @@
                              <asp:ListItem Value="26">26th</asp:ListItem>
                              <asp:ListItem Value="28">28th</asp:ListItem>
                         </asp:DropDownList>
+                       
                         <asp:RequiredFieldValidator Display="None" InitialValue="0" ValidationGroup="debitOrder" ControlToValidate="ddlDebitDate" ID="RequiredFieldValidator10" ForeColor="red" runat="server" ErrorMessage="Please select Debit Date"></asp:RequiredFieldValidator>
                    </div>
                 </div>

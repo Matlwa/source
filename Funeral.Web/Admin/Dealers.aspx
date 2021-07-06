@@ -32,7 +32,7 @@
                         <%--<asp:RegularExpressionValidator Display="None" ID="RegExp1" ValidationGroup="debitOrder" runat="server" ErrorMessage="Name Enter Only characters" ControlToValidate="txtName" ValidationExpression="[a-zA-Z ]*$" />--%>
                     </div>
         <div class="form-group">
-                        <label>Surname1  <em>*</em>  </label>
+                        <label>Surname  <em>*</em>  </label>
                         <asp:TextBox MaxLength="25" runat="server" ID="txtSurname" name="name" type="text" class="form-control"></asp:TextBox>
                         <asp:RequiredFieldValidator Display="Dynamic" ControlToValidate="txtSurname" ID="RequiredFieldValidatorSurname" ForeColor="red" runat="server" ErrorMessage="Please Enter Dealer Surname"></asp:RequiredFieldValidator>
                         <%--<asp:RegularExpressionValidator Display="None" ID="RegularExpressionValidator1" ValidationGroup="debitOrder" runat="server" ControlToValidate="txtSurname" ErrorMessage="Surname Enter Only characters" ValidationExpression="[a-zA-Z ]*$" />--%>
