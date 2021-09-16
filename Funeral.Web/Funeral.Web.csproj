@@ -713,6 +713,7 @@
     <Content Include="Properties\DataSources\Funeral.Model.UnderwriterModel.datasource" />
     <Content Include="Properties\DataSources\Funeral.Model.VehiclesModel.datasource" />
     <Content Include="Properties\DataSources\Funeral.Model.StatusModel.datasource" />
+    <None Include="Properties\PublishProfiles\August2021UATWeb.pubxml" />
     <None Include="Properties\PublishProfiles\Funeral.Web.pubxml" />
     <None Include="Properties\PublishProfiles\FuneralWeb.pubxml" />
     <None Include="Properties\PublishProfiles\FuneralWebApp.pubxml" />

@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\August2021ServiceDeployment.pubxml" />
     <None Include="Properties\PublishProfiles\dev1.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FuneralWebService.pubxml" />
