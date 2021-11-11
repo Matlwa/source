@@ -83,11 +83,15 @@
     <Compile Include="CountryModel.cs" />
     <Compile Include="CustomDetails.cs" />
     <Compile Include="CustomDetailsEnum.cs" />
+    <Compile Include="DealerCommStatus.cs" />
     <Compile Include="DealerDetailsModel.cs" />
     <Compile Include="DealerModel.cs" />
+    <Compile Include="DealershipModel Lookup.cs" />
     <Compile Include="DealershipModel.cs" />
+    <Compile Include="DealershiViewModel.cs" />
     <Compile Include="DealerStatusTypeModel.cs" />
     <Compile Include="DealersViewModel.cs" />
+    <Compile Include="DealerTypeLookupModel.cs" />
     <Compile Include="ExpensesModel.cs" />
     <Compile Include="FamilyDependencyModel.cs" />
     <Compile Include="FamilyDependencyTypeModel.cs" />
@@ -114,6 +118,8 @@
     <Compile Include="MemberAddonProductsModel.cs" />
     <Compile Include="prop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvinceLookpmodel.cs" />
+    <Compile Include="ProvinceViewModel.cs" />
     <Compile Include="QuotationDiscountModel.cs" />
     <Compile Include="QuotationDiscountsModel.cs" />
     <Compile Include="QuotationMessageModel.cs" />
@@ -131,6 +137,7 @@
     <Compile Include="smsTempletModel.cs" />
     <Compile Include="SocietyModel.cs" />
     <Compile Include="StatusModel.cs" />
+    <Compile Include="StatusTypeLookupModel.cs" />
     <Compile Include="SupportedDocumentModel.cs" />
     <Compile Include="tblPageModel.cs" />
     <Compile Include="TombStoneModel.cs" />

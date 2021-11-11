@@ -11,6 +11,9 @@ namespace Funeral.Model
         public int DealershipId { get; set; }
         public string DealershipName { get; set; }
         public string LandLine { get; set; }
+        public string ReturnedMessage { get; set; }
+        public string Username { get; set; }
+
         // public string Email { get; set; }
 
         public DealershipModel()

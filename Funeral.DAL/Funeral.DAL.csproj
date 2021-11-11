@@ -74,6 +74,7 @@
     <Compile Include="DealerDAL.cs" />
     <Compile Include="DealerDetailsDAL.cs" />
     <Compile Include="DealershipDAL.cs" />
+    <Compile Include="DealerTotal.cs" />
     <Compile Include="FuneralDAL.cs" />
     <Compile Include="FuneralPackageDAL.cs" />
     <Compile Include="Helper\DatabaseFactory.cs" />

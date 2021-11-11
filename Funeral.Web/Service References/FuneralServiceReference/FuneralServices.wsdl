@@ -532,6 +532,96 @@
   <wsdl:message name="IFuneralServices_SaveOrderMember_OutputMessage">
     <wsdl:part name="parameters" element="tns:SaveOrderMemberResponse" />
   </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealershipsLookup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealershipsLookup" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealershipsLookup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealershipsLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetAllDealershipsLookup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDealershipsLookup" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetAllDealershipsLookup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDealershipsLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetStatusTypeLookup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusTypeLookup" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetStatusTypeLookup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusTypeLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealerTypeLookup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealerTypeLookup" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealerTypeLookup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealerTypeLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetProvinceDropDown_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvinceDropDown" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetProvinceDropDown_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvinceDropDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealershipsDropDown_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealershipsDropDown" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealershipsDropDown_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealershipsDropDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_DealerCommStatusDropDown_InputMessage">
+    <wsdl:part name="parameters" element="tns:DealerCommStatusDropDown" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_DealerCommStatusDropDown_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DealerCommStatusDropDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_CheckDealershipExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDealershipExists" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_CheckDealershipExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDealershipExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_SelectDealer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDealer" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_SelectDealer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDealerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealersList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealersList" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealersList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealersListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDailyDealers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyDealers" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDailyDealers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyDealersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealerById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealerById" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealerById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealerByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_SelectAllDealerships_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDealerships" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_SelectAllDealerships_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDealershipsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_SelectDealership_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDealership" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_SelectDealership_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDealershipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealerTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealerTotal" />
+  </wsdl:message>
+  <wsdl:message name="IFuneralServices_GetDealerTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealerTotalResponse" />
+  </wsdl:message>
   <wsdl:message name="IFuneralServices_SelectMemberAddonProducts_InputMessage">
     <wsdl:part name="parameters" element="tns:SelectMemberAddonProducts" />
   </wsdl:message>
@@ -1889,6 +1979,66 @@
     <wsdl:operation name="SaveOrderMember">
       <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/SaveOrderMember" message="tns:IFuneralServices_SaveOrderMember_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/SaveOrderMemberResponse" message="tns:IFuneralServices_SaveOrderMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealershipsLookup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetDealershipsLookup" message="tns:IFuneralServices_GetDealershipsLookup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetDealershipsLookupResponse" message="tns:IFuneralServices_GetDealershipsLookup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDealershipsLookup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetAllDealershipsLookup" message="tns:IFuneralServices_GetAllDealershipsLookup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetAllDealershipsLookupResponse" message="tns:IFuneralServices_GetAllDealershipsLookup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusTypeLookup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetStatusTypeLookup" message="tns:IFuneralServices_GetStatusTypeLookup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetStatusTypeLookupResponse" message="tns:IFuneralServices_GetStatusTypeLookup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealerTypeLookup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetDealerTypeLookup" message="tns:IFuneralServices_GetDealerTypeLookup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetDealerTypeLookupResponse" message="tns:IFuneralServices_GetDealerTypeLookup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProvinceDropDown">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetProvinceDropDown" message="tns:IFuneralServices_GetProvinceDropDown_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetProvinceDropDownResponse" message="tns:IFuneralServices_GetProvinceDropDown_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealershipsDropDown">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetDealershipsDropDown" message="tns:IFuneralServices_GetDealershipsDropDown_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetDealershipsDropDownResponse" message="tns:IFuneralServices_GetDealershipsDropDown_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DealerCommStatusDropDown">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/DealerCommStatusDropDown" message="tns:IFuneralServices_DealerCommStatusDropDown_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/DealerCommStatusDropDownResponse" message="tns:IFuneralServices_DealerCommStatusDropDown_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDealershipExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/CheckDealershipExists" message="tns:IFuneralServices_CheckDealershipExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/CheckDealershipExistsResponse" message="tns:IFuneralServices_CheckDealershipExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDealer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/SelectDealer" message="tns:IFuneralServices_SelectDealer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/SelectDealerResponse" message="tns:IFuneralServices_SelectDealer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealersList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetDealersList" message="tns:IFuneralServices_GetDealersList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetDealersListResponse" message="tns:IFuneralServices_GetDealersList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyDealers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetDailyDealers" message="tns:IFuneralServices_GetDailyDealers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetDailyDealersResponse" message="tns:IFuneralServices_GetDailyDealers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealerById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetDealerById" message="tns:IFuneralServices_GetDealerById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetDealerByIdResponse" message="tns:IFuneralServices_GetDealerById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDealerships">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/SelectAllDealerships" message="tns:IFuneralServices_SelectAllDealerships_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/SelectAllDealershipsResponse" message="tns:IFuneralServices_SelectAllDealerships_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDealership">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/SelectDealership" message="tns:IFuneralServices_SelectDealership_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/SelectDealershipResponse" message="tns:IFuneralServices_SelectDealership_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealerTotal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/GetDealerTotal" message="tns:IFuneralServices_GetDealerTotal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFuneralServices/GetDealerTotalResponse" message="tns:IFuneralServices_GetDealerTotal_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SelectMemberAddonProducts">
       <wsdl:input wsaw:Action="http://tempuri.org/IFuneralServices/SelectMemberAddonProducts" message="tns:IFuneralServices_SelectMemberAddonProducts_InputMessage" />
@@ -3301,6 +3451,141 @@
     </wsdl:operation>
     <wsdl:operation name="SaveOrderMember">
       <soap:operation soapAction="http://tempuri.org/IFuneralServices/SaveOrderMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealershipsLookup">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetDealershipsLookup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDealershipsLookup">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetAllDealershipsLookup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusTypeLookup">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetStatusTypeLookup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealerTypeLookup">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetDealerTypeLookup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProvinceDropDown">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetProvinceDropDown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealershipsDropDown">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetDealershipsDropDown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealerCommStatusDropDown">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/DealerCommStatusDropDown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDealershipExists">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/CheckDealershipExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectDealer">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/SelectDealer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealersList">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetDealersList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyDealers">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetDailyDealers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealerById">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetDealerById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDealerships">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/SelectAllDealerships" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectDealership">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/SelectDealership" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealerTotal">
+      <soap:operation soapAction="http://tempuri.org/IFuneralServices/GetDealerTotal" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -1141,5 +1141,79 @@ namespace Funeral.Services
         [OperationContract]
         [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
         void SaveOrderMember(MembersModel model);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        List<DealershipLookupModel> GetDealershipsLookup();
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        List<DealershipLookupModel> GetAllDealershipsLookup();
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        List<StatusTypeLookupModel> GetStatusTypeLookup();
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        List<DealerTypeLookupModel> GetDealerTypeLookup();
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        List<ProvinceLookpmodel> GetProvinceDropDown();
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        List<DealershipLookupModel> GetDealershipsDropDown();
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        List<DealerCommunicationStatusTypeModel> DealerCommStatusDropDown();
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        string CheckDealershipExists(DealershipModel model);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        DealersViewModel SelectDealer(int DealerId, int PageSize, int PageNum, string Keyword, string SortBy, string SortOrder, string Username);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        DealersViewModel GetDealersList(string Username);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        DealersViewModel GetDailyDealers(string Username, string Date);
+
+        //[OperationContract]
+        //[WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        //DealersViewModel GetDealerTotal(string Username);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        DealerModel GetDealerById(int DealerId);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        DealershipViewModel SelectAllDealerships(string Username);
+
+        //Password Reset
+
+        //[OperationContract]
+        //[WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        //string ResetPassword(ResetPasswordModel model);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        DealershipViewModel SelectDealership(int PageSize, int PageNum, string Keyword, string Username);
+
+        [OperationContract]
+        [WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        string GetDealerTotal(/*string Total,*/ string username);
+
+        //[OperationContract]
+        //[WebInvoke(ResponseFormat = WebMessageFormat.Json)]
+        //int AddMonthlyQuotes(int DealerId, string Username);
     }
 }

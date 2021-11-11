@@ -1182,5 +1182,93 @@ namespace Funeral.Services
         {
             return MembersBAL.GetAllDebitOrderMembers(ParlourId, PageSize, PageNum, Keyword, SortBy, SortOrder);
         }
+
+        public List<StatusTypeLookupModel> GetStatusTypeLookup()
+        {
+            return DealerBAL.GetStatusTypeLookup();
+        }
+        public List<ProvinceLookpmodel> GetProvinceDropDown()
+        {
+            return DealerBAL.GetProvinceDropDown();
+        }
+
+        public List<DealershipLookupModel> GetDealershipsLookup()
+        {
+            return DealershipBAL.GetDealershipsDropDown();
+        }
+
+        public List<DealerTypeLookupModel> GetDealerTypeLookup()
+        {
+            return DealerBAL.GetDealerTypeLookup();
+        }
+
+        public List<DealershipLookupModel> GetDealershipsDropDown()
+        {
+            return DealershipBAL.GetDealershipsDropDown();
+        }
+
+        public List<DealershipLookupModel> GetAllDealershipsLookup()
+        {
+            return DealershipBAL.GetDealershipsDropDown();
+        }
+
+        public List<DealerCommunicationStatusTypeModel> DealerCommStatusDropDown()
+        {
+            return DealerBAL.GetDealerCommunicationStatuses();
+        }
+
+        public string CheckDealershipExists(DealershipModel model)
+        {
+            return DealershipBAL.CheckDealershipExists(model);
+        }
+
+        public DealersViewModel SelectDealer(int DealerId, int PageSize, int PageNum, string Keyword, string SortBy, string SortOrder, string Username)
+        {
+            return DealerDetailsBAL.SelectDealer(DealerId, PageSize, PageNum, Keyword, SortBy, SortOrder, Username);
+        }
+
+        public DealersViewModel GetDealersList(string Username)
+        {
+            return DealerDetailsBAL.GetDealersList(Username);
+        }
+
+        public DealersViewModel GetDailyDealers(string Username, string Date)
+        {
+            return DealerDetailsBAL.GetDailyDealers(Username, Date);
+        }
+
+        //public DealersViewModel GetDealerTotal(string Username)
+        //{
+        //    return DealerDetailsBAL.GetDealerTotal(Username);
+        //}
+
+        //public string ResetPassword(ResetPasswordModel model)
+        //{
+        //    return ResetPasswordBAL.ResetPassword(model);
+        //}
+
+        public DealerModel GetDealerById(int Id)
+        {
+            return DealerBAL.GetDealerById(Id);
+        }
+        public DealershipViewModel SelectAllDealerships(string Username)
+        {
+            return DealershipBAL.SelectAllDealerships(Username);
+        }
+
+        public DealershipViewModel SelectDealership(int PageSize, int PageNum, string Keyword, string Username)
+        {
+            return DealershipBAL.SelectDealership(PageSize, PageNum, Keyword, Username);
+        }
+
+        public string GetDealerTotal(/*string total, */string username)
+        {
+            return DealerBAL.GetDealerTotal(/*total,*/ username);
+        }
+
+        //public int AddMonthlyQuotes(int DealerId, string Username)
+        //{
+        //    return DealerDetailsBAL.AddMonthlyQuotes(DealerId, Username);
+        //}
     }
 }

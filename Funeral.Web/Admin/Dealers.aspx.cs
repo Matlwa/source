@@ -11,7 +11,7 @@ namespace Funeral.Web.Admin
 {
     public partial class FindDealer : AdminBasePage
     {
-        private DealerModel model;
+        private DealerDetailsModel model;
         FuneralServiceReference.FuneralServicesClient client = new FuneralServiceReference.FuneralServicesClient();      
 
         protected void Page_Load(object sender, EventArgs e)
@@ -114,7 +114,7 @@ namespace Funeral.Web.Admin
 
             {
 
-                model = new DealerModel();
+               // model = new DealerModel();
                 model.Name = txtName.Text;
                 model.Surname = txtSurname.Text;
                 model.DealershipName = Convert.ToString(ddlDealerships.Text);

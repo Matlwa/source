@@ -182,6 +182,7 @@
     <Content Include="Admin\ChangePassword.aspx" />
     <Content Include="Admin\Claims.aspx" />
     <Content Include="Admin\Dealership.aspx" />
+    <Content Include="Admin\FindDealership.aspx" />
     <Content Include="Admin\ManageDealers.aspx" />
     <Content Include="Admin\debitOrderMembers.aspx" />
     <Content Include="Admin\Dealers.aspx" />
@@ -219,6 +220,7 @@
     <Content Include="Admin\Tombstone.aspx" />
     <Content Include="Admin\TombstonePayment.aspx" />
     <Content Include="Admin\TombStoneServiceSelect.aspx" />
+    <Content Include="Admin\UpdateDealer.aspx" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -713,6 +715,14 @@
     <Content Include="Properties\DataSources\Funeral.Model.UnderwriterModel.datasource" />
     <Content Include="Properties\DataSources\Funeral.Model.VehiclesModel.datasource" />
     <Content Include="Properties\DataSources\Funeral.Model.StatusModel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.DealerCommunicationStatusTypeModel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.DealerModel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.DealershipLookupModel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.DealershipViewModel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.DealersViewModel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.DealerTypeLookupModel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.ProvinceLookpmodel.datasource" />
+    <Content Include="Properties\DataSources\Funeral.Model.StatusTypeLookupModel.datasource" />
     <None Include="Properties\PublishProfiles\August2021UATWeb.pubxml" />
     <None Include="Properties\PublishProfiles\Funeral.Web.pubxml" />
     <None Include="Properties\PublishProfiles\FuneralWeb.pubxml" />
@@ -1374,6 +1384,13 @@
     <Compile Include="Admin\Dealership.aspx.designer.cs">
       <DependentUpon>Dealership.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\FindDealership.aspx.cs">
+      <DependentUpon>FindDealership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FindDealership.aspx.designer.cs">
+      <DependentUpon>FindDealership.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ManageDealers.aspx.cs">
       <DependentUpon>ManageDealers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1714,6 +1731,13 @@
     </Compile>
     <Compile Include="Admin\TombStoneServiceSelect.aspx.designer.cs">
       <DependentUpon>TombStoneServiceSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateDealer.aspx.cs">
+      <DependentUpon>UpdateDealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateDealer.aspx.designer.cs">
+      <DependentUpon>UpdateDealer.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\Basepage.cs">
       <SubType>ASPXCodeBehind</SubType>

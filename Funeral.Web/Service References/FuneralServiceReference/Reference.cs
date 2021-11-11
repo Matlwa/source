@@ -11,9 +11,8 @@
 namespace Funeral.Web.FuneralServiceReference {
     using System.Runtime.Serialization;
     using System;
-    using Model;
-    using System.Threading.Tasks;
-
+    
+    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FuneralServiceFault", Namespace="http://schemas.datacontract.org/2004/07/Funeral.Services")]
@@ -525,6 +524,96 @@ namespace Funeral.Web.FuneralServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SaveOrderMember", ReplyAction="http://tempuri.org/IFuneralServices/SaveOrderMemberResponse")]
         System.Threading.Tasks.Task SaveOrderMemberAsync(Funeral.Model.MembersModel model);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealershipsLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetDealershipsLookupResponse")]
+        Funeral.Model.DealershipLookupModel[] GetDealershipsLookup();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealershipsLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetDealershipsLookupResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealershipLookupModel[]> GetDealershipsLookupAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetAllDealershipsLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetAllDealershipsLookupResponse")]
+        Funeral.Model.DealershipLookupModel[] GetAllDealershipsLookup();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetAllDealershipsLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetAllDealershipsLookupResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealershipLookupModel[]> GetAllDealershipsLookupAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetStatusTypeLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetStatusTypeLookupResponse")]
+        Funeral.Model.StatusTypeLookupModel[] GetStatusTypeLookup();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetStatusTypeLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetStatusTypeLookupResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.StatusTypeLookupModel[]> GetStatusTypeLookupAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealerTypeLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetDealerTypeLookupResponse")]
+        Funeral.Model.DealerTypeLookupModel[] GetDealerTypeLookup();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealerTypeLookup", ReplyAction="http://tempuri.org/IFuneralServices/GetDealerTypeLookupResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealerTypeLookupModel[]> GetDealerTypeLookupAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetProvinceDropDown", ReplyAction="http://tempuri.org/IFuneralServices/GetProvinceDropDownResponse")]
+        Funeral.Model.ProvinceLookpmodel[] GetProvinceDropDown();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetProvinceDropDown", ReplyAction="http://tempuri.org/IFuneralServices/GetProvinceDropDownResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.ProvinceLookpmodel[]> GetProvinceDropDownAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealershipsDropDown", ReplyAction="http://tempuri.org/IFuneralServices/GetDealershipsDropDownResponse")]
+        Funeral.Model.DealershipLookupModel[] GetDealershipsDropDown();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealershipsDropDown", ReplyAction="http://tempuri.org/IFuneralServices/GetDealershipsDropDownResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealershipLookupModel[]> GetDealershipsDropDownAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/DealerCommStatusDropDown", ReplyAction="http://tempuri.org/IFuneralServices/DealerCommStatusDropDownResponse")]
+        Funeral.Model.DealerCommunicationStatusTypeModel[] DealerCommStatusDropDown();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/DealerCommStatusDropDown", ReplyAction="http://tempuri.org/IFuneralServices/DealerCommStatusDropDownResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealerCommunicationStatusTypeModel[]> DealerCommStatusDropDownAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/CheckDealershipExists", ReplyAction="http://tempuri.org/IFuneralServices/CheckDealershipExistsResponse")]
+        string CheckDealershipExists(Funeral.Model.DealershipModel model);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/CheckDealershipExists", ReplyAction="http://tempuri.org/IFuneralServices/CheckDealershipExistsResponse")]
+        System.Threading.Tasks.Task<string> CheckDealershipExistsAsync(Funeral.Model.DealershipModel model);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SelectDealer", ReplyAction="http://tempuri.org/IFuneralServices/SelectDealerResponse")]
+        Funeral.Model.DealersViewModel SelectDealer(int DealerId, int PageSize, int PageNum, string Keyword, string SortBy, string SortOrder, string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SelectDealer", ReplyAction="http://tempuri.org/IFuneralServices/SelectDealerResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealersViewModel> SelectDealerAsync(int DealerId, int PageSize, int PageNum, string Keyword, string SortBy, string SortOrder, string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealersList", ReplyAction="http://tempuri.org/IFuneralServices/GetDealersListResponse")]
+        Funeral.Model.DealersViewModel GetDealersList(string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealersList", ReplyAction="http://tempuri.org/IFuneralServices/GetDealersListResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealersViewModel> GetDealersListAsync(string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDailyDealers", ReplyAction="http://tempuri.org/IFuneralServices/GetDailyDealersResponse")]
+        Funeral.Model.DealersViewModel GetDailyDealers(string Username, string Date);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDailyDealers", ReplyAction="http://tempuri.org/IFuneralServices/GetDailyDealersResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealersViewModel> GetDailyDealersAsync(string Username, string Date);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealerById", ReplyAction="http://tempuri.org/IFuneralServices/GetDealerByIdResponse")]
+        Funeral.Model.DealerModel GetDealerById(int DealerId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealerById", ReplyAction="http://tempuri.org/IFuneralServices/GetDealerByIdResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealerModel> GetDealerByIdAsync(int DealerId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SelectAllDealerships", ReplyAction="http://tempuri.org/IFuneralServices/SelectAllDealershipsResponse")]
+        Funeral.Model.DealershipViewModel SelectAllDealerships(string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SelectAllDealerships", ReplyAction="http://tempuri.org/IFuneralServices/SelectAllDealershipsResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealershipViewModel> SelectAllDealershipsAsync(string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SelectDealership", ReplyAction="http://tempuri.org/IFuneralServices/SelectDealershipResponse")]
+        Funeral.Model.DealershipViewModel SelectDealership(int PageSize, int PageNum, string Keyword, string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SelectDealership", ReplyAction="http://tempuri.org/IFuneralServices/SelectDealershipResponse")]
+        System.Threading.Tasks.Task<Funeral.Model.DealershipViewModel> SelectDealershipAsync(int PageSize, int PageNum, string Keyword, string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealerTotal", ReplyAction="http://tempuri.org/IFuneralServices/GetDealerTotalResponse")]
+        string GetDealerTotal(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetDealerTotal", ReplyAction="http://tempuri.org/IFuneralServices/GetDealerTotalResponse")]
+        System.Threading.Tasks.Task<string> GetDealerTotalAsync(string username);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SelectMemberAddonProducts", ReplyAction="http://tempuri.org/IFuneralServices/SelectMemberAddonProductsResponse")]
         Funeral.Model.MemberAddonProductsModel[] SelectMemberAddonProducts(int MemberID);
@@ -1556,10 +1645,8 @@ namespace Funeral.Web.FuneralServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SaveAddonProducts", ReplyAction="http://tempuri.org/IFuneralServices/SaveAddonProductsResponse")]
         int SaveAddonProducts(Funeral.Model.MemberAddonProductsModel model);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/GetAllDealers", ReplyAction="http://tempuri.org/IFuneralServices/GetDealersResponse")]
-        System.Threading.Tasks.Task<int> GetDealers(Funeral.Model.DealerModel model);
-        DealerModel GetAllDealers(int dealerId, int pageSize, int pageNum, string keyword, string sortBy, string sortOrder);
-        Task<int> GetDealersAsync(DealerModel model);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFuneralServices/SaveAddonProducts", ReplyAction="http://tempuri.org/IFuneralServices/SaveAddonProductsResponse")]
+        System.Threading.Tasks.Task<int> SaveAddonProductsAsync(Funeral.Model.MemberAddonProductsModel model);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -2131,6 +2218,126 @@ namespace Funeral.Web.FuneralServiceReference {
         
         public System.Threading.Tasks.Task SaveOrderMemberAsync(Funeral.Model.MembersModel model) {
             return base.Channel.SaveOrderMemberAsync(model);
+        }
+        
+        public Funeral.Model.DealershipLookupModel[] GetDealershipsLookup() {
+            return base.Channel.GetDealershipsLookup();
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealershipLookupModel[]> GetDealershipsLookupAsync() {
+            return base.Channel.GetDealershipsLookupAsync();
+        }
+        
+        public Funeral.Model.DealershipLookupModel[] GetAllDealershipsLookup() {
+            return base.Channel.GetAllDealershipsLookup();
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealershipLookupModel[]> GetAllDealershipsLookupAsync() {
+            return base.Channel.GetAllDealershipsLookupAsync();
+        }
+        
+        public Funeral.Model.StatusTypeLookupModel[] GetStatusTypeLookup() {
+            return base.Channel.GetStatusTypeLookup();
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.StatusTypeLookupModel[]> GetStatusTypeLookupAsync() {
+            return base.Channel.GetStatusTypeLookupAsync();
+        }
+        
+        public Funeral.Model.DealerTypeLookupModel[] GetDealerTypeLookup() {
+            return base.Channel.GetDealerTypeLookup();
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealerTypeLookupModel[]> GetDealerTypeLookupAsync() {
+            return base.Channel.GetDealerTypeLookupAsync();
+        }
+        
+        public Funeral.Model.ProvinceLookpmodel[] GetProvinceDropDown() {
+            return base.Channel.GetProvinceDropDown();
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.ProvinceLookpmodel[]> GetProvinceDropDownAsync() {
+            return base.Channel.GetProvinceDropDownAsync();
+        }
+        
+        public Funeral.Model.DealershipLookupModel[] GetDealershipsDropDown() {
+            return base.Channel.GetDealershipsDropDown();
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealershipLookupModel[]> GetDealershipsDropDownAsync() {
+            return base.Channel.GetDealershipsDropDownAsync();
+        }
+        
+        public Funeral.Model.DealerCommunicationStatusTypeModel[] DealerCommStatusDropDown() {
+            return base.Channel.DealerCommStatusDropDown();
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealerCommunicationStatusTypeModel[]> DealerCommStatusDropDownAsync() {
+            return base.Channel.DealerCommStatusDropDownAsync();
+        }
+        
+        public string CheckDealershipExists(Funeral.Model.DealershipModel model) {
+            return base.Channel.CheckDealershipExists(model);
+        }
+        
+        public System.Threading.Tasks.Task<string> CheckDealershipExistsAsync(Funeral.Model.DealershipModel model) {
+            return base.Channel.CheckDealershipExistsAsync(model);
+        }
+        
+        public Funeral.Model.DealersViewModel SelectDealer(int DealerId, int PageSize, int PageNum, string Keyword, string SortBy, string SortOrder, string Username) {
+            return base.Channel.SelectDealer(DealerId, PageSize, PageNum, Keyword, SortBy, SortOrder, Username);
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealersViewModel> SelectDealerAsync(int DealerId, int PageSize, int PageNum, string Keyword, string SortBy, string SortOrder, string Username) {
+            return base.Channel.SelectDealerAsync(DealerId, PageSize, PageNum, Keyword, SortBy, SortOrder, Username);
+        }
+        
+        public Funeral.Model.DealersViewModel GetDealersList(string Username) {
+            return base.Channel.GetDealersList(Username);
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealersViewModel> GetDealersListAsync(string Username) {
+            return base.Channel.GetDealersListAsync(Username);
+        }
+        
+        public Funeral.Model.DealersViewModel GetDailyDealers(string Username, string Date) {
+            return base.Channel.GetDailyDealers(Username, Date);
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealersViewModel> GetDailyDealersAsync(string Username, string Date) {
+            return base.Channel.GetDailyDealersAsync(Username, Date);
+        }
+        
+        public Funeral.Model.DealerModel GetDealerById(int DealerId) {
+            return base.Channel.GetDealerById(DealerId);
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealerModel> GetDealerByIdAsync(int DealerId) {
+            return base.Channel.GetDealerByIdAsync(DealerId);
+        }
+        
+        public Funeral.Model.DealershipViewModel SelectAllDealerships(string Username) {
+            return base.Channel.SelectAllDealerships(Username);
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealershipViewModel> SelectAllDealershipsAsync(string Username) {
+            return base.Channel.SelectAllDealershipsAsync(Username);
+        }
+        
+        public Funeral.Model.DealershipViewModel SelectDealership(int PageSize, int PageNum, string Keyword, string Username) {
+            return base.Channel.SelectDealership(PageSize, PageNum, Keyword, Username);
+        }
+        
+        public System.Threading.Tasks.Task<Funeral.Model.DealershipViewModel> SelectDealershipAsync(int PageSize, int PageNum, string Keyword, string Username) {
+            return base.Channel.SelectDealershipAsync(PageSize, PageNum, Keyword, Username);
+        }
+        
+        public string GetDealerTotal(string username) {
+            return base.Channel.GetDealerTotal(username);
+        }
+        
+        public System.Threading.Tasks.Task<string> GetDealerTotalAsync(string username) {
+            return base.Channel.GetDealerTotalAsync(username);
         }
         
         public Funeral.Model.MemberAddonProductsModel[] SelectMemberAddonProducts(int MemberID) {
@@ -3489,32 +3696,8 @@ namespace Funeral.Web.FuneralServiceReference {
             return base.Channel.SaveAddonProducts(model);
         }
         
-        public System.Threading.Tasks.Task<int> SaveAddonProductsAsync(Funeral.Model.DealerModel model) {
-            return base.Channel.GetDealersAsync(model);
-        }
-        public Funeral.Model.DealerModel GetAllDealers(int DealerId, int PageSize, int PageNum, string Keyword, string SortBy, string SortOrder)
-        {
-            return base.Channel.GetAllDealers(DealerId, PageSize, PageNum, Keyword, SortBy, SortOrder);
-        }
-
-        //public Funeral.Model.DealerStatusTypeModel SelectDealerStatusTypeByID(int StatusTypeId)
-        //{
-        //    return base.Channel.SelectDealerStatusTypeByID(StatusTypeId);
-        //}
-
-        //public System.Threading.Tasks.Task<Funeral.Model.DealerStatusTypeModel> SelectDealerStatusTypeByIDAsync(int Id)
-        //{
-        //    return base.Channel.SelectDealerStatusTypeByIDAsync(Id);
-        //}
-
-        public Task<int> GetDealers(DealerModel model)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> GetDealersAsync(DealerModel model)
-        {
-            throw new NotImplementedException();
+        public System.Threading.Tasks.Task<int> SaveAddonProductsAsync(Funeral.Model.MemberAddonProductsModel model) {
+            return base.Channel.SaveAddonProductsAsync(model);
         }
     }
 }

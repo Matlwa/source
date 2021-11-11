@@ -185,6 +185,7 @@
       <xs:element minOccurs="0" name="PostAddress3" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="PostAddress4" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="PostCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Premium" type="xs:decimal" />
       <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Telephone" nillable="true" type="xs:string" />
@@ -639,6 +640,150 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ChangeStatusReason" nillable="true" type="tns:ChangeStatusReason" />
+  <xs:complexType name="ArrayOfDealershipLookupModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DealershipLookupModel" nillable="true" type="tns:DealershipLookupModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealershipLookupModel" nillable="true" type="tns:ArrayOfDealershipLookupModel" />
+  <xs:complexType name="DealershipLookupModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DealershipId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealershipName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealershipLookupModel" nillable="true" type="tns:DealershipLookupModel" />
+  <xs:complexType name="ArrayOfStatusTypeLookupModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StatusTypeLookupModel" nillable="true" type="tns:StatusTypeLookupModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStatusTypeLookupModel" nillable="true" type="tns:ArrayOfStatusTypeLookupModel" />
+  <xs:complexType name="StatusTypeLookupModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="StatusType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusTypeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StatusTypeLookupModel" nillable="true" type="tns:StatusTypeLookupModel" />
+  <xs:complexType name="ArrayOfDealerTypeLookupModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DealerTypeLookupModel" nillable="true" type="tns:DealerTypeLookupModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealerTypeLookupModel" nillable="true" type="tns:ArrayOfDealerTypeLookupModel" />
+  <xs:complexType name="DealerTypeLookupModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DealerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerTypeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealerTypeLookupModel" nillable="true" type="tns:DealerTypeLookupModel" />
+  <xs:complexType name="ArrayOfProvinceLookpmodel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProvinceLookpmodel" nillable="true" type="tns:ProvinceLookpmodel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProvinceLookpmodel" nillable="true" type="tns:ArrayOfProvinceLookpmodel" />
+  <xs:complexType name="ProvinceLookpmodel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProvinceLookpmodel" nillable="true" type="tns:ProvinceLookpmodel" />
+  <xs:complexType name="ArrayOfDealerCommunicationStatusTypeModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DealerCommunicationStatusTypeModel" nillable="true" type="tns:DealerCommunicationStatusTypeModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealerCommunicationStatusTypeModel" nillable="true" type="tns:ArrayOfDealerCommunicationStatusTypeModel" />
+  <xs:complexType name="DealerCommunicationStatusTypeModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CommStatusTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="CommunicationStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealerCommunicationStatusTypeModel" nillable="true" type="tns:DealerCommunicationStatusTypeModel" />
+  <xs:complexType name="DealershipModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DealershipId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealershipName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LandLine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnedMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealershipModel" nillable="true" type="tns:DealershipModel" />
+  <xs:complexType name="DealersViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DealerId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealerList" nillable="true" type="tns:ArrayOfDealerDetailsModel" />
+      <xs:element minOccurs="0" name="TotalRecord" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealersViewModel" nillable="true" type="tns:DealersViewModel" />
+  <xs:complexType name="ArrayOfDealerDetailsModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DealerDetailsModel" nillable="true" type="tns:DealerDetailsModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealerDetailsModel" nillable="true" type="tns:ArrayOfDealerDetailsModel" />
+  <xs:complexType name="DealerDetailsModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CellphoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealershipId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealershipName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Landline" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealerDetailsModel" nillable="true" type="tns:DealerDetailsModel" />
+  <xs:complexType name="DealerModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CellphoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommunicationStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealershipId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealershipName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Landline" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnedMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealerModel" nillable="true" type="tns:DealerModel" />
+  <xs:complexType name="DealershipViewModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DealershipId" type="xs:int" />
+      <xs:element minOccurs="0" name="DealershipList" nillable="true" type="tns:ArrayOfDealershipModel" />
+      <xs:element minOccurs="0" name="TotalRecord" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealershipViewModel" nillable="true" type="tns:DealershipViewModel" />
+  <xs:complexType name="ArrayOfDealershipModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DealershipModel" nillable="true" type="tns:DealershipModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealershipModel" nillable="true" type="tns:ArrayOfDealershipModel" />
   <xs:complexType name="ArrayOfMemberAddonProductsModel">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberAddonProductsModel" nillable="true" type="tns:MemberAddonProductsModel" />
